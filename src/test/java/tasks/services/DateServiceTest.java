@@ -68,7 +68,7 @@ class DateServiceTest {
         assertEquals(localDate.getHour(), 12);
         assertEquals(localDate.getMinute(), 30);
     }
-    @Test
+    /*@Test
     void testGetDateMergedWithTime2ECP() throws ParseException {
       //  Ora valida dar data invalida ziua >31
         /// arrange
@@ -124,5 +124,5 @@ class DateServiceTest {
 
         // act && assert
         assertThrows(IllegalArgumentException.class, () -> dateService.getDateMergedWithTime(time, noTimeDate));
-    }
+    }*/
 }

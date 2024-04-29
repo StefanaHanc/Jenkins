@@ -23,7 +23,7 @@ public abstract class TaskList implements Iterable<Task>, Serializable  {
             incomingTasks = new LinkedTaskList();
         }
 
-        for(var i = 0; i < this.size(); i++){
+        for(int i = 0; i < this.size(); i++){
             if(getTask(i).nextTimeAfter(from) != null && getTask(i).nextTimeAfter(from).before(to)){
                 incomingTasks.add(getTask(i));
                 System.out.println(getTask(i).getTitle());
